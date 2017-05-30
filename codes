@@ -1,0 +1,28 @@
+## prime number generator excluding 2
+primenumbergen <- function(x){
+    for(i in 3:x){
+        for(j in 2:(i-1)){
+            isiprime <- 1
+            if(i %% j == 0){
+                isiprime <- 0
+                break
+            }
+        }
+    if(isiprime == 1){print(i)}
+    if(isiprime == 0){}
+    }
+}
+
+
+## prime number verification
+primenumberveri <- function(x) {
+    for(i in 2:(x-1)){
+        flag <- 1
+        if(x %% i ==0){
+            flag <- 0
+            break
+        }
+    }
+    if(flag ==1){print("TRUE")}
+    if(flag ==0){print("FALSE")}
+}
